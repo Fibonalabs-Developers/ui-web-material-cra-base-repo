@@ -1,10 +1,9 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDummyList } from 'src/api/demo';
 
-const HomePage = () => {
+function HomePage() {
   const { data } = useDummyList();
 
   return (
@@ -31,6 +30,6 @@ const HomePage = () => {
       </ul>
     </>
   );
-};
+}
 
 export default HomePage;
